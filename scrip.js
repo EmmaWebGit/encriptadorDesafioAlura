@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje-area");
-const regex = /[A-Z0-9\W]/g;
+const regex = /[^a-z !?¿¡]/g;
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -10,8 +10,8 @@ const regex = /[A-Z0-9\W]/g;
 
 //esta funcion sirve para saber si el texto ingresado tiene algun signo espacio o esta vacio retorna un booleano
 function validarTexto(texto) {
-
-    if (regex.test(texto) || texto == "") {
+    texto = texto.replace(/\s+/g, '');
+    if (regex.test(texto) || texto === "") {
         alert("El texto contiene números, signos o esta vacio. Por favor, corríjalo.");
         return false;
     } else {
