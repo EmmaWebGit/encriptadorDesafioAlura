@@ -30,6 +30,7 @@ header {
     text-align: center;
     color: #BEDC74;
     padding-top: 1%;
+    cursor: pointer;
 }
 
 .botonPastel {
@@ -41,6 +42,7 @@ header {
     text-align: center;
     color: #8C3061;
     padding-top: 1%;
+    cursor: pointer;
 }
 
 .botonNegro {
@@ -52,6 +54,7 @@ header {
     text-align: center;
     color: #3C3D37;
     padding-top: 1%;
+    cursor: pointer;
 }
 
 .logo {
