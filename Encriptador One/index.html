@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Ocultar el botón al cargar la página */
+        #btn-copiar {
+            display: none;
+        }
+    </style>
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imagenes/Logo.png" alt="logo de alura">
+        <div class="botonPastel" onclick="cambiarColor(1)">P</div>
+        <div class="botonVerde" onclick="cambiarColor(2)">V</div>
+        <div class="botonNegro" onclick="cambiarColor(3)">N</div>
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="60" rows="23" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+
+        </section>
+        <section class="contenedor">
+            <textarea class="mensaje-area" cols="30" rows="23"></textarea>
+            <button id="btn-copiar" onclick="btnCopiar()">Copiar</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">Desarrollado por Emmanuel Ibañez para Alura</div>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
