@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje-area");
-const regex = /[^a-z !?¿¡]/g;
+const regex = /[^a-z !?¿¡,]/g;
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -28,6 +28,8 @@ function btnEncriptar() {
 
         mensaje.value = textoEncriotado;
         comprobadorParametros(validarTexto(textoEncriotado));
+        alert('el texto fue encriptado correctamente');
+        
     } else {
         textoEncriotado = "";
     }
@@ -57,6 +59,7 @@ function btnDesencriptar() {
 
         mensaje.value = textoDesencriotado;
         comprobadorParametros(validarTexto(textoDesencriotado));
+        alert('el texto fue desencriptado correctamente');
     } else {
         textoDesencriotado = "";
     }
